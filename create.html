@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sales</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    
+            <div id="letter-container" class="letter-container body">
+				<h2>
+					<a href="#">Wellcome to Mark Footware</a>
+				</h2>
+			</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Zakir Hossain <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+    <div class="row">
+       <div class="col-md-2 margin">
+           <ul class="nav navbar menu btn-group">
+            <li><a href="" class="active"><i class="fa fa-user-plus"></i> <p>&nbsp;&nbsp;&nbsp;&nbsp;Create <br> (নিবন্ধন)</p></a></li>
+            <li><a href="sales.html" class=""><i class="fa fa-shopping-cart"></i> <p>&nbsp;&nbsp;&nbsp;&nbsp;Sales <br> (প্রোডাক্ট  বিক্রয়)</p></a></li>
+            
+            <li><a href="purchase.html" ><i class="fa fa-credit-card"></i><p>&nbsp;&nbsp;&nbsp;&nbsp;Purchase <br>( কাচামাল ক্রয়)</p></a></li>
+            <li><a href="bank.html" ><i class="fa fa-university"></i><p>&nbsp;&nbsp;&nbsp;&nbsp;Bank <br>(ব্যাংক লেনদেন)</p></a></li>
+            <li><a href="receive.html"  ><i class="fa fa-download"></i><p>&nbsp;&nbsp;&nbsp;&nbsp;Receive <br>(নগদ গ্রহন)</p></a></li>    
+        </ul>
+		
+       </div>
+        <div class="col-md-8">
+            <div class="row">
+		                                <div class="col-md-12">
+                                    <!-- Nav tabs --><div class="card">
+                                    <ul class="nav nav-tabs col-md-12 col-md-offset-1" role="tablist">
+                                        <li role="presentation" class="active"><a href="#sales" aria-controls="sales" role="tab" data-toggle="tab">কাস্টমার  নিবন্ধন </a></li>
+                                        <li role="presentation"><a href="#Sales_In_Cash" aria-controls="Sales_In_Cash" role="tab" data-toggle="tab">ভেনদোর   নিবন্ধন</a></li>
+                                        <li role="presentation"><a href="#Invoice" aria-controls="Sales_In_Cash" role="tab" data-toggle="tab">প্রোডাক্ট  নিবন্ধন</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content col-md-12">
+                                        <div role="tabpanel" class="tab-pane active" id="sales">
+                                             <form class="form-horizontal" action="<?php echo base_url();?>super_admin/save_emp_info" method="post" enctype="multipart/form-data">
+        <fieldset>
+ 
+            <div class="control-group col-sm-4 col-sm-offset-8">
+                   <h4>Date : 12-1-1990</h4>
+                    </div>
+
+                
+            <div class="control-group col-sm-12">
+                    <label class="control-label col-sm-2" for="typeahead">Vendor</label>
+                    <div class="controls">
+                        <select class="col-sm-3 typeahead"  name="emp_name" >
+                           <option value="">shamol</option>
+                           <option value="">rifat</option>
+                           <option value="">sobin</option>
+                        </select>
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-12">
+                    <label class="control-label col-sm-2" for="typeahead">Sub Category</label>
+                    <div class="controls">
+                        <select class="col-sm-3 typeahead"  name="emp_name" >
+                           <option value="">Material Buy</option>
+                           <option value="">rifat</option>
+                           <option value="">sobin</option>
+                        </select>
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-2">
+                    
+
+                </div>
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-13" for="typeahead">Product Name: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-8" for="typeahead">Quantity: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-8" for="typeahead">Price: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-8" for="typeahead">Amount: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            
+            <div class="form-actions  col-sm-4 col-sm-offset-2">
+                <button type="submit" class="btn btn-primary ">Add New</button>
+                
+            </div>
+            <div class="form-actions  col-sm-4 col-sm-offset-4 pull-right">
+               Total Amount: 
+                
+            </div>
+            <div class="form-actions col-sm-offset-2 col-sm-6">
+                <button type="submit" class="btn btn-primary ">Submit</button>
+                <button type="reset" class="btn btn-cancel">Cancel</button>
+            </div>
+        </fieldset>
+    </form>   
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="Sales_In_Cash">
+                                            <form class="form-horizontal" action="<?php echo base_url();?>super_admin/save_emp_info" method="post" enctype="multipart/form-data">
+        <fieldset>
+ 
+            <div class="control-group col-sm-4 col-sm-offset-8">
+                   <h4>Date : 12-1-1990</h4>
+                    </div>
+
+                
+            <div class="control-group col-sm-12">
+                    <label class="control-label col-sm-2" for="typeahead">Vendor</label>
+                    <div class="controls">
+                        <select class="col-sm-3 typeahead"  name="emp_name" >
+                           <option value="">shamol</option>
+                           <option value="">rifat</option>
+                           <option value="">sobin</option>
+                        </select>
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-12">
+                    <label class="control-label col-sm-2" for="typeahead">Sub Category</label>
+                    <div class="controls">
+                        <select class="col-sm-3 typeahead"  name="emp_name" >
+                           <option value="">Material Buy</option>
+                           <option value="">rifat</option>
+                           <option value="">sobin</option>
+                        </select>
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-2">
+                    
+
+                </div>
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-13" for="typeahead">Product Name: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-8" for="typeahead">Quantity: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-8" for="typeahead">Price: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            <div class="control-group col-sm-2">
+                    <label class="control-label col-sm-8" for="typeahead">Amount: </label>
+                    <div class="controls">
+                        <input type="text" class="col-sm-10 typeahead"  name="emp_dept" >
+
+                    </div>
+
+                </div>
+            
+            <div class="form-actions  col-sm-4 col-sm-offset-2">
+                <button type="submit" class="btn btn-primary ">Add New</button>
+                
+            </div>
+            <div class="form-actions  col-sm-4 col-sm-offset-4 pull-right">
+               Total Amount: <input type="text" class= "typeahead"  name="emp_dept" >
+                
+            </div>
+            <div class="form-actions col-sm-offset-2 col-sm-6">
+                <button type="submit" class="btn btn-primary ">Submit</button>
+                <button type="reset" class="btn btn-cancel">Cancel</button>
+            </div>
+        </fieldset>
+    </form>   
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="Invoice">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                    
+</div>
+                                            </div>
+                                            
+                                            
+	</div>
+        </div>
+        </div>
+        
+       <div class="col-md-2 margin margin-top">
+           <ul class="nav navbar menu btn-group">
+            <li><a href="payment.html"><i class="fa fa-money"></i><p>&nbsp;&nbsp;&nbsp;&nbsp;Payment <br>(নগদ প্রদান)</p></a></li>
+            <li><a href="report.html" ><i class="fa fa-book"></i><p>&nbsp;&nbsp;&nbsp;&nbsp;Report <br>(প্রতিবেদন)
+</p></a></li>
+           <li><a href="expense.html"><i class="fa fa-money"></i><p>Dailly Expense <br>(ডেইলি খরচ)</p></a></li>
+            <li><a href="stock.html" ><i class="fa fa-book"></i><p>Stock/Inventory <br>(স্টক/ ইনভেনটরি)
+</p></a></li>
+            <li><a href="production.html" ><i class="fa fa-book"></i><p>&nbsp;&nbsp;&nbsp;&nbsp;Production <br>&nbsp;&nbsp;&nbsp;&nbsp;( উৎপাদন)
+</p></a></li>
+            
+        </ul>
+		
+       </div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.lettering.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$("#letter-container h2 a").lettering();
+				});
+			</script>
+			
+
+</body>
+</html>
